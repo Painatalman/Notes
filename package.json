@@ -1,0 +1,34 @@
+{
+  "name": "notes",
+  "version": "0.0.1",
+  "description": "An app to manage notes. Might eventually use vuejs for front-end",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "debug": "node inspect app.js",
+    "debug-reload": "nodemon inspect app.js",
+    "list": "node app.js list",
+    "add-note-example": "node app.js add --title='test' --body='This is just a test'",
+    "remove-note-example": "node app.js remove --title='test'",
+    "read-note-example": "node app.js read --title='test'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "notes",
+    "nodejs",
+    "cmd"
+  ],
+  "author": "Carlos Batman",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.15.0",
+    "vue": "^2.4.2",
+    "vue-router": "^2.7.0"
+  }
+}
